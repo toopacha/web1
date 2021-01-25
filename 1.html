@@ -4,27 +4,57 @@
   <title>개와 고양이</title>
   <meta charset="utf-8">
 </head>
+<style>
+body{
+  margin:0;
+}
+a {
+  text-decoration-line: none;
+}
 
+h1{
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+#grid ol {
+  border-right: solid 1px gray;
+  width:70px;
+  margin:0;
+  padding:30px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  #grid ol {
+    border-right: none;}
+    h1{
+      border-bottom:none;}
+}
+</style>
 <body>
   <h1><a href="index.html">고양이와 개</a></h1>
-<ol>
+<div id="grid">
+ <ol>
   <li><a href="1.html">고양이</a></li>
   <li><a href="2.html">강아지</a></li>
-</ol>
-
-<h2><a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4" target="_blank"
-  title="나무위키">고양이</a></h2>
-<img src="고양이.jpg" width="400">
-<div>
-  머리가 둥글고 얼굴은 짧고 넓으며, 눈이 둥글고 커서 양안시(양쪽 눈의 망막에 맺힌 대상물을 각각이 아닌 하나로 보게 하고, 입체적으로 보게 하는 눈의 기능)의 능력이 뛰어나다. 귓바퀴는 작은 삼각형 모양으로 끝에 긴 털이 있으며 몸에는 다양한 무늬가 있다. 몸길이는 보통 30~60cm이며 몸무게는 2~3kg부터 7.5~8.5kg에 이르기까지 다양하다. 꼬리는 종류에 따라 길이가 다르며 보통은 22~38cm 정도이다. 발가락은 앞다리에 5개, 뒷다리에 4개가 있으며 발톱을 살 속에 감출 수 있다.
-[네이버 지식백과] 고양이 [cat] (국립중앙과학관 - 포유류·양서·파충류 정보, 김인규, 이한수)
-
-
-
-
-
-
-
-
+ </ol>
+ <div>
+    <h2><a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4" target="_blank"
+    title="나무위키">고양이</a></h2>
+    <img src="고양이.jpg" width="200">
+ <div>
+      머리가 둥글고 얼굴은 짧고 넓으며, 눈이 둥글고 커서 양안시(양쪽 눈의 망막에 맺힌 대상물을<br>
+      각각이 아닌 하나로 보게 하고, 입체적으로 보게 하는 눈의 기능)의 능력이 뛰어나다. 귓바퀴는<br> 작은 삼각형 모양으로 끝에 긴 털이 있으며 몸에는 다양한 무늬가 있다.
+      몸길이는 보통 30~60cm이며 몸무게는<br> 2~3kg부터 7.5~8.5kg에 이르기까지 다양하다. 꼬리는 종류에 따라 길이가 다르며 보통은 22~38cm 정도이다.<br> 발가락은 앞다리에
+      5개, 뒷다리에 4개가 있으며 발톱을 살 속에 감출 수 있다.
+  </div>
+</div>
 </body>
 </html>
